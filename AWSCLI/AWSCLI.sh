@@ -21,6 +21,9 @@ sudo snap remove aws-cli || true
 echo "Downloading AWS CLI v2..."
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 
+# Unzip the installation package
+echo "Extracting AWS CLI installation files..."
+unzip awscliv2.zip
 
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 sudo apt install unzip
