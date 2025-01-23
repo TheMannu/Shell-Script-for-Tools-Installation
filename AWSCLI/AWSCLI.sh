@@ -25,6 +25,14 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 echo "Extracting AWS CLI installation files..."
 unzip awscliv2.zip
 
+# Install AWS CLI v2
+echo "Installing AWS CLI v2..."
+sudo ./aws/install
+
+# Verify installation
+echo "Verifying AWS CLI installation..."
+aws --version || /usr/local/bin/aws --version
+
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 sudo apt install unzip
 unzip awscliv2.zip
