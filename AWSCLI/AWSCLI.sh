@@ -33,6 +33,11 @@ sudo ./aws/install
 echo "Verifying AWS CLI installation..."
 aws --version || /usr/local/bin/aws --version
 
+# Clean up installation files
+echo "Cleaning up..."
+rm -f awscliv2.zip
+rm -rf aws/
+
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 sudo apt install unzip
 unzip awscliv2.zip
